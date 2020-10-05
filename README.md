@@ -1,16 +1,32 @@
-# Oric Explorer
+# Oric Explorer - ARCHIVED INACTIVE REPOSITORY
 
-This is Oric Explorer version 2.0.0-WIP-20180324, by Scott Davies (http://oric.mrandmrsdavies.com/).
+*__!! IMPORTANT INFO - THIS PROJECT HAS CHANGED HOME AS OF 25 SEPTEMBER 2020 !!__*
 
-*Documented and published to GitHub by Laurent D. (laurentd75 on defence-force.org and github.com) in September 2018.*
+This is the old, original repository that was created to host the *Oric Explorer* utilty developed by **Scott Davies** (http://oric.mrandmrsdavies.com/ -- archived in the Wayback Machine Internet Archive at https://web.archive.org/web/20190609120811/http://oric.mrandmrsdavies.com/).
 
+**The new official *Oric Explorer* GitHub repository is now at https://github.com/oric-software/OricExplorer.**
+
+**This repository is now in archived mode. If you forked or cloned this repository before, please update your "origin" reference to now point to https://github.com/oric-software/OricExplorer.** and perform a **git pull** to fetch new changes.
+
+Original contents of this README file reproduced below for reference:
+
+
+# Oric Explorer - reference information
+
+This software was originally written by **Scott Davies** (http://oric.mrandmrsdavies.com/ -- archived in the Wayback Machine Internet Archive at https://web.archive.org/web/20190609120811/http://oric.mrandmrsdavies.com/).
+
+*First documented and published to GitHub by **Laurent D.** (https://github.com/laurentd75) in September 2018 at https://github.com/laurentd75/OricExplorer.*
+
+*Moved to the **oric-software** GitHub organization (https://github.com/oric-software/) by __retroric__ (https://github.com/retroric) on 25 September 2020.*
+
+*Primarily maintained by **Damien P.** aka __dipisoft__ (https://github.com/dipisoft).*
 
 
 ## Presentation and History
 
-Oric Explorer is a GUI application for exploring collections of Oric media, primarily tape images and floppy disk images of various formats. This includes all data pertaining to the different models of Oric computers: Oric 1, Oric Atmos, and Oric Telestrat.
+Oric Explorer is a .Net GUI  application (running primarily on Windows but also compatible with macOS & Linux) for exploring collections of Oric media, primarily tape and floppy disk images of various formats. Features include viewing text and binary data, pictures, and code with syntax highlighting pertaining to software designed for the different models of Oric 8-bit computers: Oric 1, Oric Atmos, and Oric Telestrat.
 
-This application was originally created and developed by Scott Davies and published on his web site at http://oric.mrandmrsdavies.com/.
+This application was originally created and developed by Scott Davies and published on his web site at http://oric.mrandmrsdavies.com/ (now archived at https://web.archive.org/web/20190609120811/http://oric.mrandmrsdavies.com/).
 
 The first version of Oric Explorer (referred to as "v0.70" in the application and on the author's website, although the executable file bore the "0.69.0" internal version number)  was released circa November 2008.
 
@@ -34,13 +50,12 @@ The original description for this application is reproduced below:
 
 ## Development status
 
-Oric Explorer is currently up for adoption. If you are interested in further developing and maintaining this software, you are encouraged to fork this repository and get in touch with the Oric community on the Defence Force forums.
+Oric Explorer is currently maintained by **Damien P. (dipisoft on GitHub)**. If you are interested in further developing and maintaining this software, you are encouraged to participate by getting in touch with the **oric-software** GitHub organization members (https://github.com/oric-software) or using the CEO forums (http://forums.oric.org/) or the Defence Force forum (http://forum.defence-force.org/).
 
-A topic was created especially for this purpose on the Defence Force Forums and can be found here:
-
+See the thread that was initially started on the Defence Force forum when this softare was first published on GitHub:
 http://forum.defence-force.org/viewtopic.php?t=1829
 
-Please also read ***AuthorsNotes.md*** which is a copy of an email sent to me by Scott on 23 April 2018 that explains in detail  the current status of the software and the reasons why Scott had to stop development.
+Please also read ***AuthorsNotes.md*** which is a copy of an email sent to Laurent D. by Scott on 23 April 2018 that explains in detail the  status of the software when it was first open-sourced and the reasons why Scott had to stop development.
 
 Please acknowledge the original author's name and wishes in all further development and abide by the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) licence this project was placed under (see **OricExplorer-LICENCE-CC-BY-NC-SA-4.0**.md or .txt file).
 
@@ -54,7 +69,7 @@ As such, it requires version 2015 of Microsoft Visual Studio as a minimum (altho
 
 The recommended development environment is Microsoft Visual Studio 2017. Any edition of Visual Studio can be used, including the free "Community" edition, since Oric Explorer is a free, non-commercial application.
 
-The recommended steps for setting up your development environment is as follows:
+The recommended steps for setting up your development environment are as follows:
 
 - Download and install **.NET Framework 4.5.2** : 
 
@@ -68,7 +83,7 @@ The recommended steps for setting up your development environment is as follows:
 
 ## Building
 
-Building the application is currently a manual task that must be carried from within the Visual Studio IDE.
+Building the application is currently a manual task that must be carried out from within the Visual Studio IDE.
 
 The steps involved are as follows :
 
@@ -82,7 +97,7 @@ https://msdn.microsoft.com/en-US/library/5tdasz7h.aspx.
 
 ## Packaging
 
-The "Installer" subdirectory of the Oric Explorer source contains installation scripts meant to be used with NSIS (The Nullsoft Scriptable Install System, an open-source system to create WIndows installation programs available from http://nsis.sourceforge.net).
+The "Installer" subdirectory of the Oric Explorer source contains installation scripts meant to be used with NSIS (The Nullsoft Scriptable Install System, an open-source system to create Windows installation programs available from http://nsis.sourceforge.net).
 
 However, these scripts are currently unfinished and will NOT work as expected. Specifically, in the main installation script (OricExplorerInstaller.nsi):
 
@@ -91,7 +106,7 @@ However, these scripts are currently unfinished and will NOT work as expected. S
 * there are disabled (commented) lines with hard-coded paths (see lines 24, 121, 124, 138, 142,157, 200) 
 
 
-Therefore, until the installation scripts are fully tested and ironed out, the the recommended packaging method so far is to build the project under Visual Studio and then ZIP the full contents of the **OricExplorer\bin\Release** directory. The resulting ZIP should be copied to the "**dist**" directory and its name should include details about the version and build date.
+Therefore, until the installation scripts are fully tested and ironed out, the recommended packaging method so far is to build the project under Visual Studio and then ZIP the full contents of the **OricExplorer\bin\Release** directory. The resulting ZIP should be copied to the "**dist**" directory and its name should include details about the version and build date.
 
 The generated ZIP file can then be used as a distributable file: for installing Oric Explorer, users will simply need to extract the contents of the ZIP to a suitable location.
 
@@ -123,13 +138,13 @@ Side notes:
 
 ## Cross-platform compatibility
 
-Although this application was primarily and solely targeted at the Microsoft Windows platform, it should normally be compatible with Linux and macOS platforms, thanks to the Mono project (https://www.mono-project.com/)  that brings Microsoft .Net compatibility to Linux and macOS environments.
+Although this application was primarily and solely targeted at the Microsoft Windows platform, it should normally be compatible with Linux and macOS platforms, thanks to the Mono project (https://www.mono-project.com/) that brings Microsoft .Net compatibility to Linux and macOS environments.
 
 Likewise, the MonoDevelop IDE (https://www.monodevelop.com/) can normally be used in lieu of the Visual Studio IDE to edit, build and run the project on either the Windows, macOS or Linux platforms.
 
 
 
-##Copyright and Licensing
+## Copyright and Licensing
 
 Oric Explorer is (c) Scott Davies, original creator and author of this application. 
 
@@ -145,7 +160,7 @@ See also https://en.wikipedia.org/wiki/Creative_Commons_license for a more gener
 
 By downloading and using this software, you hereby declare that you agree to be bound by the terms of this licence. If you do not agree to these terms, do not download, install or use the software.
 
-## 
+
 
 ## Features Overview
 
@@ -157,12 +172,15 @@ The following are some of the features currently available in Oric Explorer.
 - Display Character Sets and HIRES/TEXT screens.
 - Show a file as a Hexdump.
 - Show the source of BASIC programs with syntax highlighting.
-- Show Machine code programs in 6502 assembly.
-- View embedded data in TEXT or HIRES format or as a Character set (by means of a built-in Data viewer that currently supports the viewing of theses 3 kinds of data)
-- Save HIRES or TEXT screens as an image file (format currently supported include .bmp, .gif, .jpg, .png and .tif)
+- Show the source of HYPERBASIC programs with syntax highlighting. ***==> IMPLEMENTED AS OF v2.3.0***
+- Show the source of TELEASS programs with syntax highlighting. ***==> IMPLEMENTED AS OF v2.3.0***
+- Show Machine code programs in 6502 assembly source form.
+- View embedded data in TEXT or HIRES format or as a Character set (by means of a built-in Data viewer that currently supports the viewing of these 3 kinds of data)
+- Save HIRES or TEXT screens as an image file (formats currently supported include .bmp, .gif, .jpg, .png and .tif)
 - Print HIRES or TEXT screens to an attached printer.
 - View Disk contents using a graphical representation of the sectors.
 - View TEXT or HIRES images stored on a floppy disk image through a built-in specific Image Viewer
+- Launch .dsk and .tap medias in Oricutron emulator
 
 
 
@@ -175,18 +193,18 @@ The following are some of the features currently available in Oric Explorer.
 - The project includes an installation script that uses the NullSoft installation application (not fully tested).
 - The code is far from complete and therefore will certainly contain bugs as well as incomplete features.
 - The main thing that is missing is code to write to .dsk files.
-- The 'FormsControlLibrary.dll' is a one that I have written (*source code available on request*), all the other dll's are third-party ones.
+- The 'FormsControlLibrary.dll' is one that I have written (*source code available on request*), all the other dll's are third-party ones.
 - There is currently no readme file or help text but installation can be done simply by copying the bin/Release directory to wherever you want it.
 
 
 
 ## Known Bugs
 
-* DSK create / write feature: the DSK creation feature is currently broken and needs to be fixed
+* DSK create/write feature: the DSK creation feature is currently broken and needs to be fixed
 
-* Oric Explorer Settings Dialogue: in the "Tape and DIsk Folders" tab, clicking on the "Update" button raises an untrapped exception if there is no active selection in the listbox below (Media type/Folder listbox). 
+~~* Oric Explorer Settings Dialogue: in the "Tape and DIsk Folders" tab, clicking on the "Update" button raises an untrapped exception if there is no active selection in the listbox below (Media type/Folder listbox).~~  ***==> CORRECTED AS OF v2.1.0***
 
-  Note: this feature provides an easy means to update the selected location in the listbox with the contents of the text entered in the text field in the "Folder details" section to the left of the "Update" button.
+  ~~Note: this feature provides an easy means to update the selected location in the listbox with the contents of the text entered in the text field in the "Folder details" section to the left of the "Update" button.~~
 
 
 
@@ -194,31 +212,36 @@ The following are some of the features currently available in Oric Explorer.
 
 ### Usability
 
-* Selection of Tapes / Disks / ROMs directories
+* Selection of Tapes/Disks/ROMs directories
 
-  The File selection dialogue chosen is currently quite cumbersome to use as it employs the "new style"  Windows "Search Folder" folder selection dialogue instead of the "old style" "Open" file/folder selector that allows you to type the name of directories or create new directories.
+  The File selection dialogue chosen is currently quite cumbersome to use as it employs the "new style" Windows "Search Folder" folder selection dialogue instead of the "old style" "Open" file/folder selector that allows you to type the name of directories or create new directories.
 
   If possible this should be changed, or, at the very least, there should be a text field to input the desired location instead of having to browse all the way from the desktop root to the desired location.
 
-  Note: there actually is a means of entering a path in a text field and use it, via the Update button (see "bugs" section above...). But it actually is quite tedious, as you first have to add an entry using the "Search Folder" Windows dialogue, then change the added entry using the update button.
+  ~~Note: there actually is a means of entering a path in a text field and use it, via the Update button (see "bugs" section above...). But it actually is quite tedious, as you first have to add an entry using the "Search Folder" Windows dialogue, then change the added entry using the update button.~~  ***==> CORRECTED AS OF v2.1.0***
 
 
 
-## Missing / Wanted Features
+## Missing/Wanted Features
 
-* Search:
+* Search:  ***NOW IMPLEMENTED AS OF v2.3.1 AS A "FILTER" TEXT FIELD***
 
   It would be nice to add a "search" feature to search for a particular software by name in the tapes and/or disks library.
 
   It would also be nice to be able to search for a particular file on a disk, in the entire disk library.
 
-* Test Suite
+
+
+* Test Suite:
 
   There are currently no unit or integration tests for this application.
 
   Unit tests would be particularly appropriate for testing the tape/disk format functions (such as read/write tape, read/write sector, etc.) and ensuring there is no regression.
 
-  Integration tests would be useful to test the UI and ensure there are no bugs such as the one mentioned for the "Settings dialogue" in the "Tape and DIsk Folders" tab, when on the "Update" button if there is no selected line in the listbox below.
+  Integration tests would be useful to test the UI and ensure there are no bugs such as the one mentioned for the "Settings dialogue" in the "Tape and Disk Folders" tab, when clicking on the "Update" button if there is no selected line in the listbox below.
 
 * Help > Check for Updates: should now check for newer versions on the Github repo (by checking version number on dist/ on master, and/or by checking git version number tags that should need to be standardized, i.e. to use [SemVer](https://semver.org/) versioning rules).
+***==> NOW IMPLEMENTED AS OF v2.3.0***
+
+
 
